@@ -3,7 +3,7 @@
 StringView::StringView(const char* begin, const char* end): _begin(begin), _end(end)
 {}
 
-StringView::StringView(const char* str) : StringView(str, str + strlen(str)) {}
+StringView::StringView(const char* str) : StringView(str, str + strlen(str) + 1) {}
 
 StringView::StringView(const MyString& str) : StringView(str.c_str()) {}
 
